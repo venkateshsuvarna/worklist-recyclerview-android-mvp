@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_noitems"
+        android:text="No items in your Work List"
+        android:textColor="@android:color/darker_gray"
+        android:layout_centerInParent="true"
+        android:textSize="20dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewWorkList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.design.widget.FloatingActionButton xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/fab_add_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_add_item"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        app:backgroundTint="@color/colorAccent"
+        app:borderWidth="0dp"
+        app:fabSize="normal"
+        app:rippleColor="#ffffff" />
+
+    <android.support.design.widget.FloatingActionButton xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/fab_refresh_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/ic_refresh_list"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        app:backgroundTint="@color/colorAccent"
+        app:borderWidth="0dp"
+        app:fabSize="normal"
+        app:rippleColor="#ffffff" />
+
+</RelativeLayout>
